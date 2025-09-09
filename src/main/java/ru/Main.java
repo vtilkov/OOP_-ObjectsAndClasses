@@ -3,7 +3,60 @@ package ru;
 public class Main {
     public static void main(String[] args) {
 
-        //Задание 3
+        //Задание 4
+        // создать город
+        City A = new City("A");
+        City B = new City("B");
+        City C = new City("C");
+        City D = new City("D");
+        City E = new City("E");
+        City F = new City("F");
+
+        // связи (вес)
+        A.addPath(B, 5);
+        A.addPath(D, 6);
+        A.addPath(F, 1);
+        B.addPath(C, 3);
+        B.addPath(A, 5);
+        B.addPath(F, 1);
+        C.addPath(B, 3);
+        C.addPath(D, 4);
+        D.addPath(C, 4);
+        D.addPath(A, 6);
+        D.addPath(E, 2);
+        E.addPath(D, 2);
+        E.addPath(F, 2);
+        F.addPath(E, 2);
+        F.addPath(A, 1);
+        F.addPath(B, 1);
+
+        System.out.println("\n ** Информация о граничущих городах **");
+        System.out.println(A);
+        System.out.println(B);
+        System.out.println(C);
+        System.out.println(D);
+        System.out.println(E);
+        System.out.println(F);
+
+
+        System.out.println("\n ** Далее необходимо методу путешествия объекта B передать некоторое число и вывести возвращенный город на экран: **");
+        City result1 = B.travelBy(1);
+        System.out.println("результат должен быть либо A, либо С");
+        System.out.println("travelBy(1) из B: " + result1);
+
+        City result2 = B.travelBy(2);
+        System.out.println("результат должен быть либо B, либо D, либо F");
+        System.out.println("travelBy(2) из B: " + result2);
+
+        City result3 = B.travelBy(3);
+        System.out.println("результат может быть любом городом в зависимости от порядка следования путей в списках таковых у городов, город A");
+        System.out.println("travelBy(3) из B: " + result3);
+
+
+    }
+}
+
+        /*Задание 3
         //Создаем точки
         Point point1 = new Point(1, 5);
         Point point2 = new Point(2, 8);
@@ -65,7 +118,7 @@ public class Main {
         System.out.println();
     }
 
-}
+}*/
 
 
         /*Задание 2
