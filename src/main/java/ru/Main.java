@@ -16,8 +16,8 @@ public class Main {
         A.addPath(B, 5);
         A.addPath(D, 6);
         A.addPath(F, 1);
-        B.addPath(C, 3);
         B.addPath(A, 5);
+        B.addPath(C, 3);
         B.addPath(F, 1);
         C.addPath(B, 3);
         C.addPath(D, 4);
