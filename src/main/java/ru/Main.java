@@ -3,6 +3,18 @@ package ru;
 public class Main {
     public static void main(String[] args) {
 
+        /* Задание 1
+        Создайте такой подкласс (Point3D) класса Point, который будет иметь не две, а три координаты на плоскости: X,Y,Z. Вместо класса приведенного в задании можно использовать сделанный ранее самостоятельно класс Точки./*/
+
+        Point3D point3D = new Point3D(1, 2, 3);
+        System.out.println(point3D);
+
+        point3D.setX(10);
+        point3D.setY(20);
+        point3D.setZ(30);
+        System.out.println(point3D);
+
+        /*
         //Задание 4
         // создать город
         City A = new City("A");
@@ -51,8 +63,7 @@ public class Main {
         City result3 = B.travelBy(3);
         System.out.println("результат может быть любом городом в зависимости от порядка следования путей в списках таковых у городов, город A");
         System.out.println("travelBy(3) из B: " + result3);
-
-
+        */
     }
 }
 
