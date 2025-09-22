@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PolyLine {
+public class PolyLine implements Measurable {
     private List<Point> points;
 
     //конструктор без параметра

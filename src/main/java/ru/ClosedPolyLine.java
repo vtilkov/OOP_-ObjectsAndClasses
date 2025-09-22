@@ -1,7 +1,7 @@
 package ru;
 import java.util.List;
 
-public class ClosedPolyLine extends PolyLine {
+public class ClosedPolyLine extends PolyLine implements Measurable{
     public ClosedPolyLine()
     {
         super();

@@ -1,6 +1,6 @@
 package ru;
 
-public class Line {
+public class Line implements Measurable {
     final Point start;
     final Point end;
 
