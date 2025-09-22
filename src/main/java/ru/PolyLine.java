@@ -89,4 +89,9 @@ public class PolyLine {
         sb.append("]");
         return sb.toString();
     }
+
+    //Практика ООП. Полиморфизм #2. Замкнутая ломаная
+    public List<Point> getPoints() {
+        return points;
+    }
 }
