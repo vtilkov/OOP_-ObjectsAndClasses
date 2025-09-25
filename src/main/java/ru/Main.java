@@ -16,6 +16,26 @@ public class Main {
     }
     public static void main(String[] args) {
 
+        /*Здадание 4
+        Практика ООП. *Полиморфизм #4. Длина строки - задание необязательное
+        Данное задание не является обязательным для решения. Вы можете выполнить его для дополнительной тренировки навыка по данной теме
+
+                Найдите
+        возможность передать в метод задачи #3 объект строки, учитывая наличие
+        у строк метода length.*/
+
+        Measurable[] measurables = {
+                new Line(0, 0, 3, 4), //длина = 5.0
+                new PolyLine(new Point(0, 0), new Point(3, 4)), //длина = 5.0
+                new StringAdapter("Привет"),   //длина = 6.0
+                new StringAdapter("Полиморфизм") // длина = 11.0
+        };
+
+        //выведем
+        for (Measurable m: measurables) {
+            System.out.println(m + " - длина: " + m.getLength());
+        }
+
         /*Задание 3
         Практика ООП. Полиморфизм #3. Измерение длины
         Имеем два класса: Линия (Line) и Ломаная линия (PolyLine). У обоих
@@ -25,6 +45,7 @@ public class Main {
         одну Замкнутую и выведите результат на экран. */
 
         //Передайте в этот метод одну обычную Ломаную из задачи №2 Замкнутая ломаная
+        /*
         Line line1 = new Line(1, 3, 5, 8);
         Line line2 = new Line(10, 11, 15, 19);
         Line line3 = new Line(line1.getEnd(), line2.getStart());
@@ -43,7 +64,7 @@ public class Main {
         System.out.println("\n++++++++++ Интерфейс Measurable ++++++++++");
 
         //передаем разные объекты: обычную Ломаную из задачи №2 / и одну Замкнутую и выведите результат на экран.
-        printGetLength(line1, line2, line3, closedLine);
+        printGetLength(line1, line2, line3, closedLine);*/
 
         /*Задание 2
         * Практика ООП. Полиморфизм #2. Замкнутая ломаная
